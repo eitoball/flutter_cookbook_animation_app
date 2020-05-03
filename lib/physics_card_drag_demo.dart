@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
 
-import 'package:fluttercookbookanimationapp/animate_container_app.dart';
-
-
 class PhysicsCardDragDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -83,21 +80,6 @@ class _DraggableCardState extends State<DraggableCard> with SingleTickerProvider
               ),
             ),
           ),
-          Container(
-            padding: EdgeInsets.only(bottom: 20.0),
-            child: RaisedButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) {
-                      return AnimateContainerApp();
-                    }
-                ));
-              },
-              child: Text(
-                  'Animated Container'
-              ),
-            ),
-          )
         ],
       ),
     );
